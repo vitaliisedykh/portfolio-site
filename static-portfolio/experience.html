@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опыт работы - Виталий Седых</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        main { flex: 1; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-8">
+            <div class="text-center">
+                <div class="flex justify-center mb-4">
+                    <div class="w-32 h-32 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center text-4xl text-white shadow-lg">
+                        VS
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Виталий Седых</h1>
+                <p class="text-xl md:text-2xl text-blue-100">QA Engineer </p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-8 py-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-200">Главная</a>
+                <a href="experience.html" class="text-blue-600 font-medium transition duration-200">Опыт работы</a>
+                <a href="skills.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-200">Навыки</a>
+                <a href="education.html" class="text-gray-600 hover:text-blue-600 font-medium transition duration-200">Образование</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-center mb-8">Опыт работы</h1>
+            
+            <div class="space-y-6">
+                <!-- Опыт работы 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">QA Engineer</h3>
+                            <p class="text-lg text-blue-600 font-medium">Rapid Developers</p>
+                            <span class="inline-block bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm mt-1">
+                                Полная занятость
+                            </span>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm mt-2 md:mt-0">
+                            Октябрь 2023 - Май 2025
+                        </span>
+                    </div>
+                    <div class="text-gray-600 leading-relaxed whitespace-pre-line">
+                        -Тестирование Web и мобильных приложений;
+                        -Проведение регрессионного и smoke тестирования;
+                        -Создание автотестов для Web-приложений с помощью Python (Selenium, PyTest);
+                        -Тестирование API (Swagger, Postman);
+                        -Ведение и актуализация тестовой документации: тест-кейсы, чек-листы, баг-репорты, тест-план, отчет о тестировании;
+                        -Автоматизация тест-кейсов и поддержка тестовых артефактов в Allure;
+                        -Анализ инцидентов с помощью DevTools;
+                        -Работа с логами в Kibana;
+                        -Написание SQL-запросов для работы с БД в СУБД PostgreSQL;
+                        -Интеграция автотестов в Bitbucket Pipelines для запуска на каждую сборку;
+                        -Организация и проведение приемо-сдаточных тестирований.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">© 2025 Виталий Седых</p>
+        </div>
+    </footer>
+</body>
+</html>
