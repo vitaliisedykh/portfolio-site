@@ -11,8 +11,8 @@ QA Engineer с знаниями в full-stack разработке.
 - **Процессы:** CI/CD, Agile, Scrum
 
 ## 📞 Контакты
-- **Email:** vitalala447234@gmail.com
+- **Email:** job.vitaliisedykh@gmail.com
 - **Телефон:** +7 (900) 946-36-52
-- **Telegram:** @lilwasd
+- **Telegram:** @wasdlill
 - **Локация:** Воронеж
 
