@@ -4,61 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Виталий Седых – QA Engineer</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-        body {
-            background: #f8fafc;
-        }
-
-        /* Анимация появления */
+        * { font-family: 'Inter', sans-serif; }
+        body { background: #f8fafc; }
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-up {
-            animation: fadeInUp 0.8s ease forwards;
-        }
-        .delay-1 {
-            animation-delay: 0.1s;
-        }
-        .delay-2 {
-            animation-delay: 0.2s;
-        }
-        .delay-3 {
-            animation-delay: 0.3s;
-        }
-
-        /* Активная ссылка в навигации */
+        .animate-fade-up { animation: fadeInUp 0.8s ease forwards; }
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
         .nav-active {
             color: #2563eb;
             font-weight: 600;
             border-bottom: 2px solid #2563eb;
         }
-
-        /* Эффект при наведении на карточки */
         .card-hover {
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .card-hover:hover {
             transform: translateY(-6px);
-            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
         }
-
-        /* Кнопка "Подробнее" */
         .link-arrow {
             display: inline-flex;
             align-items: center;
@@ -72,23 +43,23 @@
 </head>
 <body class="flex flex-col min-h-screen">
 
-    <!-- ======= ШАПКА ======= -->
+    <!-- ШАПКА -->
     <header class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 text-white shadow-xl">
         <div class="container mx-auto px-4 py-10 text-center">
             <div class="flex justify-center mb-4">
                 <div class="w-32 h-32 rounded-full shadow-2xl border-4 border-white/50 overflow-hidden">
-                    <img src="my_photo.jpg" alt="Виталий Седых" class="w-full h-full object-cover" />
+                    <img src="my_photo.jpg" alt="Виталий Седых" class="w-full h-full object-cover object-top" />
                 </div>
             </div>
             <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-2">Виталий Седых</h1>
             <p class="text-2xl md:text-3xl text-blue-100 font-light">QA Engineer</p>
             <p class="mt-4 text-blue-200 max-w-2xl mx-auto text-lg">
-                Ручное тестирование web &amp; mobile · Авито Академия Fullstack QA
+                Ручное тестирование web и мобильных приложений
             </p>
         </div>
     </header>
 
-    <!-- ======= НАВИГАЦИЯ ======= -->
+    <!-- НАВИГАЦИЯ -->
     <nav class="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-50 border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="flex justify-center space-x-8 py-4 text-sm md:text-base">
@@ -100,11 +71,11 @@
         </div>
     </nav>
 
-    <!-- ======= ОСНОВНОЙ КОНТЕНТ ======= -->
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
     <main class="flex-1 container mx-auto px-4 py-10">
         <div class="max-w-5xl mx-auto">
 
-            <!-- Блок: Обо мне -->
+            <!-- Обо мне -->
             <section class="mb-12 animate-fade-up">
                 <div class="bg-white rounded-3xl shadow-xl p-8 md:p-10 card-hover border border-gray-100">
                     <div class="flex items-center gap-3 mb-6">
@@ -137,7 +108,7 @@
                 </div>
             </section>
 
-            <!-- Блок: Опыт работы (кратко) -->
+            <!-- Опыт работы (кратко) -->
             <section class="mb-12 animate-fade-up delay-1">
                 <div class="flex items-center gap-3 mb-6">
                     <i class="fas fa-briefcase text-3xl text-blue-600"></i>
@@ -164,7 +135,7 @@
                 </div>
             </section>
 
-            <!-- Блок: Образование -->
+            <!-- Образование -->
             <section class="mb-12 animate-fade-up delay-2">
                 <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl shadow-lg p-8 md:p-10 border border-indigo-100">
                     <div class="flex items-center gap-4 mb-6">
@@ -172,17 +143,14 @@
                         <h2 class="text-2xl font-bold text-gray-800">Образование</h2>
                     </div>
                     <div class="grid sm:grid-cols-3 gap-6">
-                        <!-- 1 -->
                         <div class="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm hover:shadow-md transition">
                             <p class="font-semibold text-indigo-700"><i class="fas fa-university mr-2"></i>Университет Цинциннати (США)</p>
                             <p class="text-gray-600 text-sm">Компьютерная инженерия</p>
                         </div>
-                        <!-- 2 -->
                         <div class="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm hover:shadow-md transition">
                             <p class="font-semibold text-purple-700"><i class="fas fa-laptop-code mr-2"></i>General Assembly</p>
                             <p class="text-gray-600 text-sm">Курс Software Engineering</p>
                         </div>
-                        <!-- 3 -->
                         <div class="bg-white/80 backdrop-blur-sm rounded-xl p-5 shadow-sm border-2 border-orange-300 hover:shadow-md transition">
                             <p class="font-semibold text-orange-600"><i class="fas fa-rocket mr-2"></i>Авито Академия</p>
                             <p class="text-gray-600 text-sm">Fullstack QA (в процессе)</p>
@@ -192,7 +160,7 @@
                 </div>
             </section>
 
-            <!-- Блок: Контакты -->
+            <!-- Контакты (обновлены) -->
             <section class="animate-fade-up delay-3">
                 <div class="bg-white rounded-3xl shadow-xl p-8 card-hover">
                     <div class="flex items-center gap-3 mb-6">
@@ -201,13 +169,13 @@
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <!-- Email -->
-                        <a href="mailto:vitalala447234@gmail.com" class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition duration-200 group">
+                        <a href="mailto:job.vitaliisedykh@gmail.com" class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition duration-200 group">
                             <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 group-hover:bg-blue-200 transition">
                                 <i class="fas fa-envelope text-lg"></i>
                             </div>
                             <div>
                                 <div class="text-xs text-gray-500">Email</div>
-                                <div class="text-sm font-medium truncate">vitalala447234@gmail.com</div>
+                                <div class="text-sm font-medium truncate">job.vitaliisedykh@gmail.com</div>
                             </div>
                         </a>
                         <!-- Telegram -->
@@ -217,7 +185,7 @@
                             </div>
                             <div>
                                 <div class="text-xs text-gray-500">Telegram</div>
-                                <div class="text-sm font-medium">@lilwasd</div>
+                                <div class="text-sm font-medium">@wasdlill</div>
                             </div>
                         </a>
                         <!-- Phone -->
@@ -247,7 +215,7 @@
         </div>
     </main>
 
-    <!-- ======= ПОДВАЛ ======= -->
+    <!-- ПОДВАЛ -->
     <footer class="bg-gray-800 text-white py-6 mt-10">
         <div class="container mx-auto px-4 text-center">
             <div class="flex flex-wrap justify-center gap-6 text-sm mb-3">
